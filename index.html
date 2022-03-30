@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Welcome to Explomrade</title>
+
+
+    <link rel="shortcut icon" href="images/favicon.ICO" type="image/x-icon">
+    
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="client.css">
+    <script type="text/javascript" >
+      function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+
+
+var images =[
+  "img/pic2.JPG",
+  "img/pic3.JPG",
+  "img/pic4.JPG",
+  "img/pic5.JPG",
+  "img/pic6.JPG",
+  "img/pic7.JPG",
+];
+var num=0;
+ function next(){
+   var slider=document.getElementById("slider");
+   num++;
+   if(num>=images.length){
+     num=0;
+   }
+   slider.src=images[num];
+ }
+
+
+ function prev(){
+   var slider=document.getElementById("slider");
+   num--;
+   if(num<0){
+     num=images.length-1;
+   }
+   slider.src=images[num];
+ }
+    </script>
+
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Expl</em>omrade</a>
+    </div>
+    <!--<button class="open-button" onclick="openForm()">INTRESTED</button>-->
+  <div class="form-popup" id="myForm">
+    <form action="bookings.php" class="form-container">
+      <h2>Bookings Only</h2>
+  
+      <label for="name"><b>Full Names</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required>
+
+      <label for="intrested"><b>Intrested In</b></label>
+      <input type="text" placeholder="Enter Event" name="intrested" required>
+  
+      <label for="location"><b>Your County</b></label>
+      <br>
+      <select name="location">
+        <option value="Kirinyaga" selected>Kirinyaga</option>
+        <option value="Nairobi">Nairobi</option>
+        <option value="Mombasa">Mombasa</option>
+        <option value="Nakuru">Nakuru</option>
+        <option value="Muranga">Muranga</option>
+        <option value="Uasin-gishu">Uasin Gishu</option>
+        <option value="Kakamega">Kakamega</option>
+        <option value="Kisumu">Kisumu</option>
+        <option value="Embu">Embu</option>
+        <option value="Nyeri">Nyeri</option>
+        <option value="Baringo">Baringo</option>
+        <option value="Kisii">Kisii</option>
+        </select>
+      <!--<input type="text" placeholder="Enter county" name="location" required>-->
+  
+      <button type="submit" class="btn">Book Now</button>
+      <button type="submit" class="btn cancel" onclick="closeForm()"><i class="fa fa-remove"></i> Close</button>
+    </form>
+  </div>
+
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+
+      
+
+        <li><a href="#section1"><i class="fa fa-home"></i> Home</a></li>
+        <li class="has-submenu"><a href="#section2"><i class="fa fa-calendar"></i> Featured Events</a>
+          <ul class="sub-menu">
+            <li><a href="#section3">Touring Events</a></li>
+            <li><a href="#section3">Photoshooting</a></li>
+            <li><a href="#section3">Graduation Events</a></li>
+            <li><a href="#section3">Birthday Events</a></li>
+            <!--<li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>-->
+          </ul>
+        </li>
+        <li class="has-submenu"><a href="#section2"><i class="fa fa-wrench"></i> Services</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Entertainment Management</a></li>
+            <!--<li><a href="#section3"></a></li>-->
+            <li><a href="#section2">Concept Design</a></li>
+            <li><a href="#section2">Venue Sourcing</a></li>
+             <!--<li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>-->
+          </ul>
+        </li>
+        <li><a href="section5"><i class="fa fa-map-marker"></i> Location</a></li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6"><i class="fa fa-phone"></i> Contact Us</a></li>
+        <li><a href="Loginguest.php" class="external"><i class="fa fa-briefcase"></i> Guest</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="assets/images/course-vid.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h6>Explomrade Events Organizers</h6>
+              <h2><em>Adventures</em> All</h2>
+              <div class="main-button">
+                <div class="open-section"> <button class="open-section2" onclick="openForm()">INTRESTED</button></div>
+                
+                
+            </div>
+              
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-music"></i>Entertainment Management </h4>
+              </div>
+              <div class="content-hide">
+                <p>We a team of talented personnel,ultimate performance and entertainment experience.</p>
+                <p class="hidden-sm">Promise you to have maximum and quality services from Explomrade,We a team of talented personnel,ultimate performance and entertainment experience.</p>
+                <!--<div class="scroll-to-section"><a href="#section2">More Info.</a></div>-->
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>Concept and Design</h4>
+              </div>
+              <div class="content-hide">
+                <p>Our able team make sure every element of your event design upholds integrity of you brand.</p>
+                <p class="hidden-sm">Our able team make sure every element of your event design upholds integrity of you brand.</p>
+                <!--<div class="scroll-to-section"><a href="#section3">Details</a></div>-->
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-globe"></i>Venue Sourcing</h4>
+              </div>
+              <div class="content-hide">
+                <p>Explomrades bring your event to life,we identify and set you good and fun places for your events.</p>
+                <p class="hidden-sm">We bring your event to life,we identify and set you good and fun places for your events.</p>
+                <!--<div class="scroll-to-section"><a href="#section4">Read More</a></div>-->
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Why choose Explomrade?</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Best Customer service</a></li>
+              <li><a href='#tabs-2'>Top Management</a></li>
+              <li><a href='#tabs-3'>Quality Services</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/customer.JPG" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Customer Services</h4>
+                    <p>Explomrade customer services help customers with complaints and question,give customers information about our products and services,take some orders and process returns,we therefore help our clients understand the products and answering questions about reservations.  Please tell your friends about us. Thank you.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/manage.JPG" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Management</h4>
+                    <p>Our management are responsible for controlling and overseeing the entire organization.We develop goals,strategic plans,company policies,and make decision on the direction of business.</p> 
+                    <p>In addition we play a significant role in mobilization of outside resources.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/quality.JPG" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Quality Services</h4>
+                    <p>Explomrade adventures offers quality services to our clients,we make research to ensure what are the best services desired by our customers and bring them to your adventures.The purpose of this research is to assess perception of the services offeredby agencies in Kenya.</p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section coming-soon" data-section="section3">
+
+
+    <div class="pct">
+      <button class="prv" onclick="prev()"><i class="fa fa-chevron-circle-left"></i> Previous</button>
+      <img id="slider" src="img/pic1.JPG" width="100%" height="80%"/>
+      <button class="nxt" onclick="next()"><i class="fa fa-chevron-circle-right"></i> Next</button>
+    </div>
+   
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-12">
+          <div class="continer centerIt">
+            
+            
+          </div>
+        </div>
+        <div class="col-md-5">
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section why-us" data-section="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Locate Us</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <!--location here-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.8329659260423!2d37.278098097026565!3d-0.500770269180964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18288039aaaaaaab%3A0x527dc91abb8b9071!2sKutus!5e0!3m2!1ssw!2ske!4v1625475103862!5m2!1ssw!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section  class="section courses" data-section="section6">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Customer Care</h2>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+
+
+          <div class="item">
+            <img src="assets/images/manager-logo.JPG" alt="">
+            <div class="down-content">
+              <h4>Manager</h4>
+              <a href="https://wa.me/+254798271539" target='_blank'><i class="fa fa-whatsapp"></i> WhattsApp Manager</a><br>
+              <a href="https://wa.me/+254798271539" target='_blank'><i class="fa fa-twitter"></i> Twitter</a><br>
+              <a href="https://wa.me/+254798271539" target='_blank'><i class="fa fa-facebook"></i> Facebook</a><br>
+              <a href="mailto:nichomosh99@gmail.com" target='_blank'><i class="fa fa-envelope"></i> Email Manager</a></p>
+              <div class="author-image">
+                <img src="assets/images/manager.JPG" alt="">
+              </div>
+              <div class="text-button-free">
+                <a href="#" disabled><i class="fa fa-"></i>Nicholas Omondi</a>
+                
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="assets/images/explo1.PNG" alt="">
+            <div class="down-content">
+              <h4>Explomrade Customer Care</h4>
+              <a href="https://wa.me/+254751164284" target='_blank'><i class="fa fa-whatsapp"></i> WhattsApp Explomrade</a><br>
+              <a href="https://twitter.com/explomrade" target='_blank'><i class="fa fa-twitter"></i> Twitter</a><br>
+              <a href="https://instagram.com/explomrade.eventorganizers" target='_blank'><i class="fa fa-instagram"></i> Instagram</a><br>
+              <a href="https://wa.me/+254798271539" target='_blank'><i class="fa fa-facebook"></i> Facebook</a><br>
+              <a href="mailto:explomradeadventures@gmail.com" target='_blank'><i class="fa fa-envelope"></i> Email Explomrade</a></p>
+              <div class="author-image">
+                <img src="assets/images/explo3.PNG" alt="">
+              </div>
+              <div class="text-button-free">
+                <a href="#"><i class="fa fa-angle-"></i>Customer Desk</a>
+                
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="item">
+            <img src="assets/images/patner-logo.JPG" alt="">
+            <div class="down-content">
+              <h4>Partner 1</h4>
+              <a href="https://wa.me/+254111654357" target='_blank'><i class="fa fa-whatsapp"></i> WhattsApp Patner 1</a>
+              <div class="author-image">
+                <img src="assets/images/manager-logo.JPG" alt="">
+              </div>
+              <div class="text-button-free">
+                <a href=""><i class="fa fa-"></i>Partner</a>
+                
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="assets/images/patner-logo.JPG" alt="">
+            <div class="down-content">
+              <h4>Partner 2</h4>
+              <a href="https://wa.me/+254111654357" target='_blank'><i class="fa fa-whatsapp"></i> WhattsApp Patner 2</a>
+              <div class="author-image">
+                <img src="assets/images/manager-logo.JPG" alt="">
+              </div>
+              <div class="text-button-free">
+                <a href=""><i class="fa fa-"></i>Partner</a>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="assets/images/developer-logo.JPG" alt="">
+            <div class="down-content">
+              <h4>Developer</h4>
+              <a href="https://wa.me/+254791881302" target='_blank'><i class="fa fa-whatsapp"></i> WhattsApp Developer</a><br>
+              <a href="https://twitter.com/jewelswebdevs" target='_blank'><i class="fa fa-twitter"></i> Twitter</a><br>
+              <a href="https://facebook.com/jonie.jewel" target='_blank'><i class="fa fa-facebook"></i> Facebook</a><br>
+              <a href="mailto:jewelswebdevs20@gmail.com" target='_blank'><i class="fa fa-envelope"></i> Email Developer</a>
+              <div class="author-image">
+                <img src="assets/images/dev.jpg" alt="">
+              </div>
+              <div class="text-button-free">
+                <a href="#"><i class="fa fa-"></i>Cheruiyot johnstone</a>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section data-section="section5">
+
+  </section>
+  
+  
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2021 by Jewels Web Devs  
+          
+           | Design: <a href="http://jewelswebdevs.rf.gd" rel="sponsored" target="_parent">Our Website</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+</html>
